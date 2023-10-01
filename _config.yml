@@ -1,0 +1,273 @@
+# Theme Settings
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+locale: "zh-CN"
+title: sunnbor的博客
+title_separator: "-"
+subtitle: 个人站
+name: "sunnbor"
+description: 欢迎来到我的个人站~
+email: sunnbor@163.com
+# # 头像里面的标题
+# avatarTitle: sunnbor
+# # 头像里面的描述
+# avatarDesc: 描述
+# the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sunnbor.github.io"
+# the subpath of your site, e.g. /blog
+baseurl: ""
+repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+
+teaser: /assets/images/500x300.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: "/assets/images/apple-touch-icon.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title: "sunnbor的个人博客" # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : false # true, false (default)
+words_per_minute: 200
+
+# Site Author
+author:
+  name: "sunnbor"
+  avatar: "/assets/images/avatar.png"
+  bio: ""
+  links:
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sunnbor"
+    - label: "微博"
+      icon: "fab fa-fw fa-weibo"
+      url: "https://weibo.com/"
+    - label: "CSDN"
+      icon: "fab fa-fw fa-csdn"
+      url: "https://blog.csdn.net/"
+
+# Site Footer
+footer:
+  links:
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/sunnbor"
+    - label: "微博"
+      icon: "fab fa-fw fa-weibo"
+      url: "https://weibo.com/"
+
+# Comment
+comments:
+  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
+  disqus:
+    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+  utterances:
+    theme: # "github-light" (default), "github-dark"
+    issue_term: # "pathname" (default)
+  giscus:
+    repo_id: # Shown during giscus setup at https://giscus.app
+    category_name: # Full text name of the category
+    category_id: # Shown during giscus setup at https://giscus.app
+    discussion_term: # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled: # '1' for enabled (default), '0' for disabled
+    theme: # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  staticman:
+    branch: # "master"
+    endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
+comment:
+  # https://www.livere.com
+  livere: MTAyMC81OTAzMC8zNTQ5Mg==
+  # disqus: leopard
+  # 有言id,登录有言官网申请
+  # uyan: 2143225
+
+atom_feed:
+  path: # blank (default) uses feed.xml
+# SEO Related
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+
+# 统计
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-EMB5R38212"
+    anonymize_ip: false # default
+# 使用博客模板请去掉或者更换 id
+baidu:
+  id: fce6beb5cebf074df0e5343edde9a35b
+
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+# ga:
+#     id: UA-84134159-3
+#     host: auto
+
+# Search
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: "lunr"
+lunr:
+  search_within_pages: true
+algolia:
+  application_id: "QB6HVGBSBA"
+  index_name: "dev_minimal-mistakes"
+  search_only_api_key: "9d5014e5bbc77372547bce778dfa5663"
+  powered_by: true
+
+# 缺省
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      toc: true
+      toc_label: "目录"
+      toc_sticky: true
+  - scope:
+      path: ""
+      type: test
+    values:
+      layout: single
+      toc: true
+      toc_label: "目录"
+      toc_sticky: true
+      author_profile: false
+      # share: true
+      sidebar:
+        nav: "test"
+
+# Collections
+# 定义的合集名称叫 ​​jekyll​​​，那对应的文件就是 ​​_jekyll​​
+#​ output: true​​ 表示这个合集下每个文件都会被渲染成独立的 html 文件
+# ​​sort_by: lesson​​​ 表示合集内容会根据 ​​lesson​​ 字段来排序
+# ​​lesson​​ 定义在每个合集文件的 Front Matter 中
+collections:
+  test:
+    output: true
+    sort_by: lesson
+    permalink: /tutorials/:collection/:path/
+
+# Liquid
+strict_front_matter: true
+liquid:
+  error_mode: strict
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# 博客是否自动生成目录，false为不生成
+enableToc: true
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jemoji
+
+# 转换时候强制包含某些文件，文件夹, .htaccess 是一个典型例子，因为默认排除.开头的文件
+include: ['_pages', '.htaccess']
+#转换时候排除某些文件，文件夹
+exclude:
+  [
+    "node_modules",
+    "gulpfile.js",
+    "package.json",
+    "yarn.lock",
+    "package-lock.json",
+    "assets/css/sass/",
+  ]
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

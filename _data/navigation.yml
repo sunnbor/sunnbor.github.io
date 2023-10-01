@@ -1,0 +1,52 @@
+# main links
+main:
+  - title: "首页"
+    url: /
+  - title: "标签"
+    url: /tags/
+  - title: "年份"
+    url: /year-archive/
+  # - title: "教程"
+  #   url: /tutorials/
+  - title: "关于"
+    url: /about/
+# documentation links
+# sidebar navigation list sampl
+test:
+  - title: "安装"
+    url: /tutorials/test/installing
+  - title: "快速上手"
+    url: /tutorials/test/getting-started/
+  - title: "模板语言 Liquid"
+    url: /tutorials/test/liquid/
+  - title: "Front Matter & YAML"
+    url: /tutorials/test/font-matter-and-yaml/
+  - title: "布局管理"
+    url: /tutorials/test/layouts/
+  - title: "模块化"
+    url: /tutorials/test/includes/
+  - title: "博客功能"
+    url: /tutorials/test/blogs/
+  - title: "合集管理"
+    url: /tutorials/test/collections/
+  - title: "数据文件"
+    url: /tutorials/test/data-files/
+
+css:
+  - title: 入门篇
+    children:
+      - title: 应用方式
+        url: /tutorials/css/applying-css/
+      - title: HTML选择器
+        url: /tutorials/css/selectors-properties-and-values/
+      - title: 颜色
+        url: /tutorials/css/colors/
+      - title: 文字
+        url: /tutorials/css/text/
+      - title: 边距
+        url: /tutorials/css/margins-and-padding/
+      - title: 边框
+        url: /tutorials/css/borders/
+      - title: 总结
+        url: /tutorials/css/beginner-conclusion/
+
