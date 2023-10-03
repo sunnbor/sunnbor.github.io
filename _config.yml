@@ -62,7 +62,10 @@ footer:
 
 # Comment
 comments:
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
+  provider: livere
+  # false (default), "disqus", "discourse", "facebook", "staticman", "utterances", "giscus", "custom"
+  livere: 
+    uid: MTAyMC81OTAzMC8zNTQ5Mg==
   disqus:
     shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -87,7 +90,7 @@ comments:
     endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
 comment:
   # https://www.livere.com
-  livere: MTAyMC81OTAzMC8zNTQ5Mg==
+  
   # disqus: leopard
   # 有言id,登录有言官网申请
   # uyan: 2143225
