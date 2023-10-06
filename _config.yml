@@ -24,8 +24,7 @@ email: sunnbor@163.com
 # avatarDesc: 描述
 # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://sunnbor.github.io"
-# the subpath of your site, e.g. /blog
-baseurl: ""
+baseurl: "" # the subpath of your site, e.g. /blog
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
 teaser: /assets/images/500x300.png # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -38,7 +37,7 @@ words_per_minute: 200
 author:
   name: "sunnbor"
   avatar: "/assets/images/avatar.png"
-  bio: ""
+  bio: " 暂有简介"
   links:
     - label: "Github"
       icon: "fab fa-fw fa-github"
@@ -88,13 +87,7 @@ comments:
   staticman:
     branch: # "master"
     endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
-comment:
-  # https://www.livere.com
-  
-  # disqus: leopard
-  # 有言id,登录有言官网申请
-  # uyan: 2143225
-
+# 定阅
 atom_feed:
   path: # blank (default) uses feed.xml
 # SEO Related

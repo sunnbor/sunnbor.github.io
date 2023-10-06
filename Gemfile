@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+# source "https://rubygems.org"
+source "https://gems.ruby-china.com"
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -7,6 +9,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
+# gem "jekyll"
 gem "github-pages", group: :jekyll_plugins
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
@@ -26,8 +29,9 @@ group :jekyll_plugins do
   gem "jekyll-gist"
 end
 
-gem "webrick", "~> 1.8"
-
+gem "webrick"
+gem "kramdown-parser-gfm" 
+gem "faraday-retry"
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
