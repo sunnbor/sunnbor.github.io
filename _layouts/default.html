@@ -6,6 +6,8 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <!-- 脚本区 -->
+    {% include scripts.html %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -18,16 +20,12 @@
       {{ content }}
       {% include /comments-providers/scripts.html %}
     </div>
-
     <!-- 搜索 -->
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
       </div>
     {% endif %}
-
-    <!--  -->
-    {% include scripts.html %}
 
     <!-- 底部区 -->
     <div id="footer" class="page__footer">
@@ -36,6 +34,8 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+
+
   </body>
 
 </html>

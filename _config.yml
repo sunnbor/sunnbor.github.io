@@ -88,8 +88,10 @@ comments:
     branch: # "master"
     endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
 # 定阅
+
 atom_feed:
   path: # blank (default) uses feed.xml
+
 # SEO Related
 google_site_verification:
 bing_site_verification:
@@ -97,13 +99,13 @@ yandex_site_verification:
 
 # 统计
 analytics:
-  provider: "google-gtag"
+  provider: "baidu"
   google:
     tracking_id: "G-EMB5R38212"
     anonymize_ip: false # default
-# 使用博客模板请去掉或者更换 id
-baidu:
-  id: fce6beb5cebf074df0e5343edde9a35b
+  baidu:
+    # 使用博客模板请去掉或者更换 id
+    id: fce6beb5cebf074df0e5343edde9a35b
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
