@@ -88,7 +88,6 @@ comments:
     branch: # "master"
     endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
 # 定阅
-
 atom_feed:
   path: # blank (default) uses feed.xml
 
