@@ -3,13 +3,15 @@ main:
   - title: "首页"
     url: /
   - title: "标签"
-    url: /tags/
+    url: page/tags/
   - title: "时间轴"
-    url: /year-archive/
+    url: page/year-archive/
   # - title: "教程"
   #   url: /tutorials/
   - title: "关于"
-    url: /about/
+    url: page/about/
+
+
 # documentation links
 # sidebar navigation list sampl
 test:
@@ -50,3 +52,4 @@ css:
       - title: 总结
         url: /tutorials/css/beginner-conclusion/
 
+python:

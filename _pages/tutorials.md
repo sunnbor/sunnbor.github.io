@@ -2,7 +2,7 @@
 title: 技术教程
 layout: single
 classes: wide
-permalink: /tutorials/
+permalink: page/tutorials/
 feature_row:
   - image_path: /assets/images/tutorials/jekyll.png
     alt: 深入浅出Jekyll
